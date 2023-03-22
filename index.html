@@ -1,21 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--d:\본인이름\아이디\index.html-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>포트폴리오 메인</title>
+    <title>포트폴리오 - 현대모비스</title>
+    <!--문서 정보 등록-->
+    <!--검색엔진최적화(Search Engine Optimization) :SEO-->
+    <meta name="subject" content="현대모비스 벤치마킹 사이트">
+    <meta name="keywords" content="현대모비스,모빌리티서비스,자동차,생산,판매 ">
+    <meta name="description content="현대모비스는 내일의 모빌리티를 향한 열정적 도전으로 미래를 선도합니다.>
+    
+    <meta name="author" content="mr. heo">
+
+
+    <!--파비콘(favicon)설정-->
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <!-- https://heojun0827.github.io/web1-->
+    <!--오픈 그래프 설정-->
+    <meta name="og:site_name" content="사이트이름">
+    <meta name="og:title" content="포트폴리오 - 현대모비스">
+    <meta name="og:description" content="현대모비스는 내일의 모빌리티를 향한 열정적 도전으로 미래를 선도합니다.">
+    <meta name="og:url" content="https://heojun0827.github.io/web1">
+    <meta name="og:image" content="./images/thumbnail.jpg">
+    
+    <!--기본 폰트 및 초기화 로딩-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet"> 
+    <!--스타일 초기화-->
+     <!--reset.css normalize.css 를 CDN 또는 다운로드 받아 link로 연결-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+   
+    <style>
+       
+        * { margin: 0; padding: 0;}
+       
+        body{ width: 100%;font-family: 'Noto Sans KR', sans-serif;}
+       ul { list-style: none; }
+       a { text-decoration: none; }
+       img{ border: none; }
+
+       .box{ margin: 10px; margin-top: 30px;}
+        .np{  font-family: 'Nanum Pen Script', cursive;}
+
+        
+
+        .container{clear:both; width: 100%;}
+        .hd{clear:both; width: 100%;}
+        .tnb{clear: both; width: 100%; height: 35px; background-color: forestgreen;}
+        .tnb_wrap{ clear:both; width: 1400px; margin: 0 auto; height: 20px;}
+        .right_tnb{ float:right;}
+        .right_tnb li{float:left; line-height: 35px;}
+        .right_tnb li a {margin-left: 14px; display: block; width: 30px;height: 30px;}
+        .tnb ul li a {color: #fff; font-size: 0.9mm;}     
+         /* split icon : 하나의 아이콘셋 이미지를 쪼개어 여러 아이콘을 표시 
+        background-image는 같고, background-position으로 조절하여 해당 아이콘이 나타나도록 함
+    */
+    /* 각 각의 아이콘 이미지 적용시
+    .right_tnb li a { background-size:auto; background-position:center center; }
+    .right_tnb li a.ico1 { background-image: url("./images/icon1.png"); }
+    .right_tnb li a.ico2 { background-image: url("./images/icon2.png"); }
+    .right_tnb li a.ico3 { background-image: url("./images/icon3.png"); }
+    */
+    .right_tnb li a.sns1 { background-position:px px; }
+    .right_tnb li a.sns2 { background-position:px -px; }
+    .right_tnb li a.sns3 { background-position:px px; }
+    .tnb ul li a { color:#fff; font-size:em; }
+
+    .main { clear:both; width: 100%;height: 120px; background-color: #fff;}
+    .main_wrap {width: 1400px; margin: 0 auto;}
+
+    .logo{ display: block; width: 120px; height: 45px; overflow: hidden; 
+        position: absolute; top: 0px; left: 0;}
+    .logo img { display:block; width: 100px; height: auto;}
+
+    .gnb{ position: relative;}
+    .gnb > ul {width: 800px; height: 40px; border: 1px solid #333; margin: 0 auto;}
+    .gnb > ul > li{ float: left;}
+
+    .sitemap_btn {display: block; position: absolute; top: 0px;
+        right: 0px; cursor: pointer;}
+    .sitemap { position: fixed; top: 0px; left:0px; width: 100px; height: 100vh; z-index: auto;
+        background-color: deeppink; display: none;}
+    #sitemap_ck :checked ~ .sitemap {display: block;}
+    #sitemap_ck {display: none;}
+    </style>
+
 </head>
 <body>
-    <nav class="gnb">
-        <a href="./web1">포트폴리오1</a>
-        <a href="./web2">포트폴리오2</a>
-        <a href="./web3">포트폴리오3</a>
-        <a href="/web4">포트폴리오4</a>
-        <a href="/web5">포트폴리오5</a>
-        <a href="/web6">포트폴리오6</a>
-        <a href="/web7">포트폴리오7</a>
-    </nav>
+   <div class="container">
+    <header class="hd">
+            <nav class="tnb">
+                <div class="tnb+wrap">
+                    <ul class="right_tnb">
+                        <li><a href="" class="sns1">A1</a></li>
+                        <li><a href="" class="sns2">A2</a></li>
+                        <li><a href="" class="sns3">A3</a></li>
+                        <li><a href="" class="sns4">A4</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="main">
+                <div class="main_wrap">
+                    <a href="" class="logo"></a>
+                        <nav class="gnb">
+                            <ul class="gnb_fr">
+                                <li><a href="">메뉴1</a></li>
+                                <li><a href="">메뉴2</a></li>
+                                <li><a href="">메뉴3</a></li>
+                                <li><a href="">메뉴4</a></li>
+                                <li><a href="">메뉴5</a></li>
+                            </ul>
+                        </nav>
+                        <label for="sitemap_ck"class="sitemap_btn">사이트맵</label>
+                </div>
+            </div>
+            <input type="cheakbox" id="sitemap_ck">
+            <div class="sitemap">
+                <div class="sitemap_fr">
+                    <label for="sitemap_ck" class="close_btn">닫기</label>
+                    여기는 사이트 맵
+                </div>
+            </div>
+    </header>
+    <div class="content">
+
+    </div>
+    <footer class="ft">
+
+    </footer>
+   </div>
+   <div>
+    
+   </div>
 </body>
 </html>
