@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오 - 현대모비스</title>
+    <!--문서 정보 등록-->
+    <!--검색엔진최적화(Search Engine Optimization) :SEO-->
+    <meta name="subject" content="현대모비스 벤치마킹 사이트">
+    <meta name="keywords" content="현대모비스,모빌리티서비스,자동차,생산,판매 ">
+    <meta name="description content="현대모비스는 내일의 모빌리티를 향한 열정적 도전으로 미래를 선도합니다.>
+    
+    <meta name="author" content="mr. heo">
+
+
+    <!--파비콘(favicon)설정-->
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <!-- https://heojun0827.github.io/web1-->
+    <!--오픈 그래프 설정-->
+    <meta name="og:site_name" content="사이트이름">
+    <meta name="og:title" content="포트폴리오 - 현대모비스">
+    <meta name="og:description" content="현대모비스는 내일의 모빌리티를 향한 열정적 도전으로 미래를 선도합니다.">
+    <meta name="og:url" content="https://heojun0827.github.io/web1">
+    <meta name="og:image" content="./images/thumbnail.jpg">
+    
+    <!--기본 폰트 및 초기화 로딩-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap" rel="stylesheet"> 
+    <!--스타일 초기화-->
+     <!--reset.css normalize.css 를 CDN 또는 다운로드 받아 link로 연결-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+   
+    <style>
+       
+        * { margin: 0; padding: 0;}
+       
+        body{ width: 100%;font-family: 'Noto Sans KR', sans-serif;}
+        ul { list-style: none; }
+        a { text-decoration: none; }
+        img{ border: none; }
+
+       .box{ margin: 10px; margin-top: 30px;}
+        .np{  font-family: 'Nanum Pen Script', cursive;}
+
+        
+
+        .container{clear:both; width: 100%;}
+        .hd{clear:both; width: 100%;}
+        .tnb{clear: both; width: 100%; height: 35px; background-color: forestgreen;}
+        .tnb_wrap{ clear:both; width: 1400px; margin: 0 auto; height: 20px;}
+        .right_tnb { float:right; }
+        .right_tnb li { float:left; line-height: 35px; }
+        .right_tnb li a { margin-left: 14px; display:block; width:30px; height:30px;
+        text-indent:9999px; overflow: hidden; 
+        background-image: url("./images/icons.png");
+        margin-top: 10px; background-size:300px 700px; }
+            
+         /* split icon : 하나의 아이콘셋 이미지를 쪼개어 여러 아이콘을 표시 
+        background-image는 같고, background-position으로 조절하여 해당 아이콘이 나타나도록 함
+    */
+    /* 각 각의 아이콘 이미지 적용시
+    .right_tnb li a { background-size:auto; background-position:center center; }
+    .right_tnb li a.ico1 { background-image: url("./images/icon1.png"); }
+    .right_tnb li a.ico2 { background-image: url("./images/icon2.png"); }
+    .right_tnb li a.ico3 { background-image: url("./images/icon3.png"); }
+    */
+    .right_tnb li a.sns1 { background-position:-67px -67px; }
+    .right_tnb li a.sns2 { background-position:-7px -67px; }
+    .right_tnb li a.sns3 { background-position:-36px -67px; }
+    .tnb ul li a { color:#fff; font-size:0.9em; }
+
+    .main { clear:both; width: 100%;height: 120px; background-color: #fff;}
+    .main_wrap {width: 1400px; margin: 0 auto;}
+
+    .logo{ display: block; width: 120px; height: 45px; overflow: hidden; 
+        position: absolute; top: 0px; left: 0;}
+    .logo img { display:block; width: 100px; height: auto;}
+
+    .gnb{ position: relative; margin-top: 10px;}
+    .gnb > ul {width: 800px; height: 40px;  margin: 0 auto;}
+    .gnb > ul > li{ float: left; width: 25%; text-align: center; 
+        line-height: 50px; }
+    .gnb> ul> li > a{display: block; font-size: 1.3em; color: #333;
+    font-weight: bold;}
+    .gnb> ul> li:hover > a { border-bottom: 2px solid #075d46; color: #075d46;} 
+    
+    .sub{display: none; padding-top: 20px; width: 1000px;} 
+    .sub.item2 {margin-left: -240px;}
+    .sub.item3 {margin-left: -320px;}
+    .sub.item4 {margin-left: -480px;}
+    .sub.item5 {margin-left: -640px;}
+    .gnb > ul > li:hover > .sub {display: block;}
+    .sub > ul > li { float: left; width: 20%;}
+    .sub > ul > li > a {display: block; color:#333; font-size: 1.1em;
+    font-size: 500;}
+    .sub > ul > li:hover > a {color: gray;}
+
+    .sitemap_btn {display: block; position: absolute; top: 20px; z-index: 10;
+    right: 0px; cursor: pointer; width: 20px; height: 20px; overflow: hidden;
+    text-indent: -9999px; background-image: url("./images/gnb_icon_menu.png");
+    background-size: 20px 40px; background-position: center -20px;}
+    .sitemap { position: fixed; top: 0px; left:0px; width: 100px; height: 100vh; z-index: 999;
+    background-color: deeppink; display: none;}
+    #sitemap_ck :checked ~ .sitemap {display: block;}
+    #sitemap_ck {display: none;}
+    </style>
+
+</head>
+<body>
+   <div class="container">
+    <header class="hd">
+            <nav class="tnb">
+                <div class="tnb+wrap">
+                    <ul class="right_tnb">
+                        <li><a href="" class="sns1">A1</a></li>
+                        <li><a href="" class="sns2">A2</a></li>
+                        <li><a href="" class="sns3">A3</a></li>
+                        <li><a href="" class="sns4">A4</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="main">
+                <div class="main_wrap">
+                    <a href="" class="logo">
+                        <img src="./images/headerlogo.png" alt="현대모비스 로고">
+                    </a>
+                        <nav class="gnb">
+                            <ul class="gnb_fr">
+                                <li><a href="">회사정보</a>
+                                    <div class="sub">
+                                        <ul class="dp2">
+                                            <li><a href="">회사개요</a></li>
+                                            <li><a href="">인재채용</a></li>
+                                            <li><a href="">뉴스룸</a></li>
+                                            <li><a href="">글로벌네트워크</a></li>
+                                        </ul>
+                                    </div>      
+                                </li>
+
+                                <li><a href="">모빌리티 기술</a>
+                                    <div class="sub">
+                                        <ul class="dp2">
+                                            <li><a href="">제품</a></li>
+                                            <li><a href="">R&D</a></li>
+                                            <li><a href="">오픈이노베이션</a></li>
+                                        </ul>
+                                    </div>      
+                                </li>
+                                
+                                <li><a href="">지속가능경영</a>
+                                    <div class="sub">
+                                        <ul class="dp2">
+                                            <li><a href="">지속가능경영</a></li>
+                                            <li><a href="">컴플라이언스경영</a></li>
+                                            <li><a href="">환경경영</a></li>
+                                            <li><a href="">안전보건경영</a></li>
+                                            <li><a href="">사회 공헌</a></li>
+                                        </ul>
+                                    </div>      
+                                </li>
+                                <li><a href="">투자정보</a>
+                                    <div class="sub">
+                                        <ul class="dp2">
+                                            <li><a href="">일반정보</a></li>
+                                            <li><a href="">재무정보</a></li>
+                                            <li><a href="">주가정보</a></li>
+                                            <li><a href="">주요보고서</a></li>
+                                            <li><a href="">전자정보&공시</a></li>
+                                        </ul>
+                                    </div>      
+                                </li>
+                            </ul>
+                        </nav>
+                        <label for="sitemap_ck"class="sitemap_btn">사이트맵</label>
+                </div>
+            </div>
+            <input type="cheakbox" id="sitemap_ck">
+            <div class="sitemap">
+                <div class="sitemap_fr">
+                    <label for="sitemap_ck" class="close_btn">닫기</label>
+                    여기는 사이트 맵
+                </div>
+            </div>
+    </header>
+    <div class="content">
+        <figure class="vs">
+            <div class="img_box">
+                <video src="./movie/main.mp4" muted autoplay loop></video>
+            </div>
+        </figure>
+    </div>
+    <footer class="ft">
+
+    </footer>
+</div>
+<div class="fix_area">
+
+</div>
+</body>
+</html>
