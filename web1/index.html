@@ -122,6 +122,44 @@
     #page2 { background-color: #fff; color: #333;}
     #page3 { background-color: #fff; color: #333;}
     #page4 { background-color: #fff; color: #333;}
+    #page1 .sub_title{ font-size:28px; color:#fff; font-weight: 100;}
+    #page1 .main_title{ font-size: 72px; color: #000; font-weight: 600;
+    float:left;}
+    #page1 .pgl_btn_box {float: right;}
+    #paage1 .pg1_btn_box label{ display: block; padding: 0.8em; float: left;
+    border: 1px solid #e1e1e1; border-radius: 36px; margin: 0.5rem; color: #999;
+    cursor: pointer;}
+    #page1 .pg1_btn_box label:hover { color: #fff;
+        background-color: #37e3b5;}
+    #pg1_ral:checked ~ .tit_box .pg1_btn_box .item1 { color: #fff;
+        background-color: #075d46;}
+    #pg1_ral:checked ~ .tit_box .pg1_btn_box .item2 { color: #fff;
+    background-color: #075d46;}
+    #pg1_ral:checked ~ .tit_box .pg1_btn_box .item3 { color: #fff;
+    background-color: #075d46;}
+    #pg1_ral:checked ~ .tit_box .pg1_btn_box .item4 { color: #fff;
+    background-color: #075d46;}
+    #pg1_ral:checked ~ .tit_box .pg1_btn_box .item5 { color: #fff;
+    background-color: #075d46;}
+    #pg1_ral:checked ~ .tit_box .pg1_btn_box .item6 { color: #fff;
+    background-color: #075d46;}
+    
+    #page2 { background-color: #f1f1f1; color: #222; }
+    #page2 .page_wrap { width: 1280px; padding-top: 80px; }
+    .grid_fr { clear:both; width: 1280px; }
+    .grid_fr .grid_box { clear:both; width: 1280px; padding-top: 40px; }
+    .grid_box li { width: 410px; margin-right: 25px; float: left; height: 624px; }
+    .grid_box li:last-child { margin-right: 0; }
+    .grid_box li a { display: block; color: #fff; background-position: center center;
+    background-repeat: no-repeat; border-radius: 40px; margin-top: 25px; height: 300px; }
+    .grid_box li a.item1 { background-image: url();}
+    .grid_box li a.item2 { background-image: url();}
+    .grid_box li a.item3 { background-image: url();}
+    .grid_box li a.item4 { background-image: url();}
+    .grid_box li a.item5 { background-image: url();}
+    .grid_box li a .grid_tit{ padding-top: 9.2em; line-height:  1.8;}
+    .grid_box li a .grid_com{ font-size : 16px;}
+    
     </style>
 
 </head>
@@ -201,38 +239,92 @@
                 </div>
             </div>
     </header>
-    <div class="content">
-        <figure class="vs">
-            <div class="img_box">
-                <video src="./movie/main.mp4" muted autoplay loop></video>
-            </div>
-        </figure>
-        <!--section.page#page$*4>h2.page_title{페이지제목$}+div.page_wrap-->
-        <section class="page" id="page1">
-            <h2 class="page_title">MOBIS LIVE</h2>
-            <div class="page_wrap">
+            <div class="content">
+                <figure class="vs">
+                    <div class="img_box">
+                        <video src="./movie/main.mp4" muted autoplay loop></video>
+                    </div>
+                </figure>
+                <!--section.page#page$*4>h2.page_title{페이지제목$}+div.page_wrap-->
+                <section class="page" id="page1">
+                    <h2 class="page_title">MOBIS LIVE</h2>
+                    <div class="page_wrap">
+                        <h3 class="sub_title">Mobis Media</h3>
+                        <h2 class="main_title"></h2>
+                    </div>
+                    <input type="radio" name="pg_ra" id="pg1_ra6" class="pg1_ra">
+                    <div class="tit_box">
+                        <article class="pg1_btn_box">
+                            <!-- (input[type=radio][name=pg_ra]#pg1_ra$)-->
+                            <label for="pg1_ra1" class="item1"></label>
+                            <input type="radio" name="pg_ra" id="pg1_ra1" class="pg1_ra" checked>
+                            <label for="pg1_ra2" class="item2"></label>
+                            <input type="radio" name="pg_ra" id="pg1_ra2" class="pg1_ra">
+                            <label for="pg1_ra3" class="item3"></label>
+                            <input type="radio" name="pg_ra" id="pg1_ra3" class="pg1_ra">
+                            <label for="pg1_ra4" class="item4"></label>
+                            <input type="radio" name="pg_ra" id="pg1_ra4" class="pg1_ra"> 
+                            <label for="pg1_ra5" class="item5"></label>
+                            <input type="radio" name="pg_ra" id="pg1_ra5" class="pg1_ra">
+                            <label for="pg1_ra6" class="item6"></label>
+                            <input type="radio" name="pg_ra" id="pg1_ra6" class="pg1_ra">
+                        </article>
+                
+                
+                </section>
+                <section class="page" id="page2">
+                    <h2 class="page_title">더 넓은 미래를 향한 꿈의 도전</h2>
+                    <div class="page_wrap">
 
-            </div>
-        </section>
-        <section class="page" id="page2">
-            <h2 class="page_title">더 넓은 미래를 향한 꿈의 도전</h2>
-            <div class="page_wrap">
+                    </div>
+                </section>
+                <section class="page" id="page3">
+                    <h2 class="page_title">지속가능경영KEYISSUE</h2>
+                    <div class="page_wrap">
+                        <!-- article.grid_fr>ul.grid_box>li*3>(a.item$>h3.grid_tit+p.grid_com)*2-->
+                    <article class="grid_fr">
+                        <ul class="grid_box">
+                            <li>
+                                <a href="" class="item1">
+                                    <h3 class="grid_tit"></h3>
+                                    <p class="grid_com"></p>
+                                </a>
+                                <a href="" class="item2">
+                                    <h3 class="grid_tit"></h3>
+                                    <p class="grid_com"></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="item1">
+                                    <h3 class="grid_tit"></h3>
+                                    <p class="grid_com"></p>
+                                </a>
+                                <a href="" class="item2">
+                                    <h3 class="grid_tit"></h3>
+                                    <p class="grid_com"></p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="item1">
+                                    <h3 class="grid_tit"></h3>
+                                    <p class="grid_com"></p>
+                                </a>
+                                <a href="" class="item2">
+                                    <h3 class="grid_tit"></h3>
+                                    <p class="grid_com"></p>
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+                <section class="page" id="page4">
+                    <h2 class="page_title">투자정보</h2>
+                    <div class="page_wrap">
+                    
 
-            </div>
-        </section>
-        <section class="page" id="page3">
-            <h2 class="page_title">지속가능경영KEYISSUE</h2>
-            <div class="page_wrap">
-
-            </div>
-        </section>
-        <section class="page" id="page4">
-            <h2 class="page_title">투자정보</h2>
-            <div class="page_wrap">
-
-            </div>
-        </section>
-    </div>
+                    </div>
+                </section>
+                    
     <footer class="ft">
 
     </footer>
