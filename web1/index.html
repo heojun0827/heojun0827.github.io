@@ -48,7 +48,7 @@
     .container{clear:both; width: 100%;}
     .hd{clear:both; width: 100%;}
     .tnb{clear: both; width: 100%; height: 35px; background-color: rgb(45, 45, 245,0.8);}
-    .tnb_wrap{ clear:both; width: 1400px; margin: 0 auto; height: 20px;}
+    .tnb_wrap { clear:both;  width: 1400px; margin: 0 auto; height:20px; }
     .left_tnb { float:left; }
     .left_tnb li { float:left; line-height: 35px; }
     .left_tnb li:first-child::after { content:"|"; color:#fff; margin-right: 14px; }
@@ -57,10 +57,9 @@
     .right_tnb { float:right; }
     .right_tnb li { float:left; line-height: 35px; }
     .right_tnb li a { margin-left: 14px; display:block; width:30px; height:30px;
-        text-indent:9999px; overflow: hidden; 
-        background-image: url("./images/icons.png");
-        margin-top: 10px; background-size:300px 700px; }
-        
+     text-indent:9999px; overflow: hidden; 
+     background-image: url("./images/icons.png");
+     margin-top: 10px; background-size:300px 700px; }
      /* split icon : 하나의 아이콘셋 이미지를 쪼개어 여러 아이콘을 표시 
     background-image는 같고, background-position으로 조절하여 해당 아이콘이 나타나도록 함
     */
@@ -75,21 +74,23 @@
     .right_tnb li a.sns3 { background-position:-36px -67px; }
     .tnb ul li a { color:#fff; font-size:0.9em; }
 
-    .main { clear:both; width: 100%;height: 120px; background-color: #fff;}
-    .main_wrap {width: 1400px; margin: 0 auto;}
-
-    .logo{ display: block; width: 120px; height: 45px; overflow: hidden; 
-        position: absolute; top: 0px; left: 0;}
-    .logo img { display:block; width: 100px; height: auto;}
-
-    .gnb{ position: relative; margin-top: 10px;}
-    .gnb > ul {width: 800px; height: 40px;  margin: 0 auto;}
-    .gnb > ul > li{ float: left; width: 25%; text-align: center; 
-        line-height: 50px; }
-    .gnb> ul> li > a{display: block; font-size: 1.3em; color: #333;
-    font-weight: bold;}
-    .gnb> ul> li:hover > a { border-bottom: 2px solid #075d46; color: #075d46;} 
+    .main { clear:both; width: 100%; height:75px; background-color: #fff; 
+    border-bottom:1px solid #ecedee; }
+    .main_wrap { width: 1400px; margin: 0 auto; position:relative; }
     
+    .logo { display:block; width: 120px; height:45px; overflow:hidden;
+        position:absolute; top:10px; left: 0; z-index:10;   }
+    .logo img { display:block; width: 100%; height:auto; }
+    
+    .gnb { position:relative; margin-top: 10px; }
+    .gnb > ul { width:800px;  height:48px;  margin: 0 auto; }
+    .gnb > ul > li { float:left; width: 20%; text-align: center; 
+        line-height: 50px; }
+    .gnb > ul > li > a { display:block; font-size:1.3em; color:#333;
+    font-weight: bold; }
+    .gnb > ul > li:hover > a { border-bottom:2px solid #075d46; 
+        color:#075d46; }
+
     .sub{display: none; padding-top: 20px; width: 1000px;} 
     .sub.item2 {margin-left: -240px;}
     .sub.item3 {margin-left: -320px;}
@@ -100,14 +101,15 @@
     .sub > ul > li > a {display: block; color:#333; font-size: 1.1em;
     font-size: 500;}
     .sub > ul > li:hover > a {color: gray;}
-    .sitemap_btn {display: block; position: absolute; top: 20px; z-index: 10;
-    right: 0px; cursor: pointer; width: 20px; height: 20px; overflow: hidden;
-    text-indent: -9999px; background-image: url("./images/header_ico1.PNG");
-    background-size: 20px 40px; background-position: center -20px;}
-    .sitemap { position: fixed; top: 0px; left:0px; width: 100px; height: 100vh; z-index: 999;
-    background-color: deeppink; display: none;}
-    #sitemap_ck :checked ~ .sitemap {display: block;}
-    #sitemap_ck {display: none;}
+
+    .sitemap_btn { display:block; position:absolute; top:20px;  z-index:10;
+         right:0px; cursor:pointer; width: 20px; height: 20px; overflow:hidden;
+        text-indent:-9999px; background-image: url("./images/gnb_icon_menu.png");
+        background-size:20px 40px; background-position:center -20px; }
+    .sitemap { position:fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+         z-index:999; background-color: deeppink; display:none; }
+    #sitemap_ck:checked ~ .sitemap { display:block; }    
+    #sitemap_ck { display:none; }
     
     /* 메인콘텐츠 스타일 */
     .vs { clear:both; position:relative; width: 100vw; height:calc(100vh - 135px);
@@ -127,9 +129,9 @@
     #page1 .pg1_btn_box label { display:block; padding:0.8em; float:left; 
     border:1px solid #e1e1e1; border-radius:36px; margin:0.5rem; color:#999;
     cursor:pointer;  }
-    #page1 .pg1_btn_box label:hover {  color:#fff; background-color:#37e3b5; }
+    #page1 .pg1_btn_box label:hover {  color:#fff; background-color:gray; }
     .pg1_ra { display:none; }    
-    #page1 .pg1_ra:checked + label { color:#fff; background-color:#075d46; }
+    #page1 .pg1_ra:checked + label { color:#fff; background-color:gray; }
     .ban_fr { clear:both; width: 1280px; height: 550px; padding-top: 40px; overflow:hidden; }
     .ban_fr .ban_box { width: 600%; height: 550px; transition-duration:0.6s; }
     .ban_fr .ban_box li { width: 1280px; float:left; height: 550px; }
@@ -137,10 +139,10 @@
     border-radius:40px;  }
     .ban_fr .ban_box li .ban_tit_box { float:right; width: 400px; height: 550px; position:relative; 
         background-color: #f1f1f1; border-radius:40px; }
-    .ban_fr .ban_box li .ban_tit_box .ban_tit1 { font-size:64px; line-height:3; color:#075d46; 
+    .ban_fr .ban_box li .ban_tit_box .ban_tit1 { font-size:64px; line-height:3; color:black; 
     margin-left:50px; }
     .ban_fr .ban_box li .ban_tit_box .ban_tit2 { position:absolute; left:50px; bottom: 120px;
-         font-size:36px; line-height:2; color:#075d46; }
+         font-size:36px; line-height:2; color: black; }
     .ban_fr .ban_box li .ban_tit_box .ban_com { position:absolute; bottom:50px;
         left: 50px;  font-size:16px; color:#666; }
 
@@ -170,35 +172,13 @@
     .grid_box li a.item3 .grid_tit { padding-top:9.2em; line-height: 1.8; }
     .grid_box li a .grid_com { font-size:16px; }
 
-    #page3 { background-color: #fff; color:#333; }
-    #page3 .tit_box { clear:both; padding-top:80px; width: 1280px; margin: 0 auto; }
-    .more { display:block; position:absolute; top:60px; right:200px; font-size:68px; font-weight:bold; 
-    width:80px; height:80px; border:1px solid #ccc; text-align: center; color:#999; }
-    .board_fr { clear:both; width: 1280px; margin:0px auto;  padding-top: 40px; }
-    .tb1 { clear:both; display:table; border-collapse: collapse;  }
-    .tb1 tr { display:table-row;  width: 1280px; }
-    .tb1 td { display:table-cell; min-height:50px; padding-top: 20px; padding-bottom: 20px; 
-    border-top:1px solid #ccc; }
-    .tb1 tr:last-child td { border-bottom:1px solid #ccc; }
-    .tb1 td.td1 { vertical-align:top; width:100px; text-align:left; font-size:32px; 
-        color:#075d46; font-weight: 100; }
-    .tb1 td a { display:block; color:#333; transition-duration:0.4s; }
-    .tb1 td a .td_tit { width:1100px; font-size:28px; line-height:1.4; font-weight:200;  padding-right: 36px;
-        white-space: nowrap; overflow:hidden; text-overflow: ellipsis; }
-    .tb1 td a .td_com { width:1100px; font-size:18px; line-height:2.2; font-weight:100; 
-        color:#999;  padding-right: 36px;
-        white-space: nowrap; overflow:hidden; text-overflow: ellipsis; }
-    .tb1 td a:hover { color:#075d46; }
-    .tb1 td a:hover .td_com { color:#075d46;}   
-
-
-    #page4 { background-color:#075d46; color:#fff; }
-    #page4 .page_wrap { width: 1280px; padding-top:80px; }
+    #page3 { background-color:gray; color:#fff; }
+    #page3 .page_wrap { width: 1280px; padding-top:80px; }
     .col_fr { clear:both; width: 1280px; padding-top: 40px; }
     .col_fr .col_box { clear: both; width: 1280px; }
     .col_fr .col_box li.left { float:left; width: 844px; height: 458px; 
     background-color:#fff; color:#000; border-radius:25px; box-sizing: border-box; 
-    padding:38px; }
+padding:38px; }
     .one_line { font-size:28px; line-height: 2; padding-bottom:18px; }    
     .inv_p { clear:both; }
     .large_txt { float:left; font-size:70px; padding-right: 40px; }
@@ -222,6 +202,26 @@
     width:79px; height:76px; background-image:url("./images/icons.png"); background-repeat: no-repeat;
     background-position:0px -682px; margin-top: 30px; margin-left: 20px; } 
 
+    #page4 { background-color: #fff; color:#333; }
+    #page4 .tit_box { clear:both; padding-top:80px; width: 1280px; margin: 0 auto; }
+    .more { display:block; position:absolute; top:60px; right:200px; font-size:68px; font-weight:bold; 
+    width:80px; height:80px; border:1px solid #ccc; text-align: center; color:#999; }
+    .board_fr { clear:both; width: 1280px; margin:0px auto;  padding-top: 40px; }
+    .tb1 { clear:both; display:table; border-collapse: collapse;  }
+    .tb1 tr { display:table-row;  width: 1280px; }
+    .tb1 td { display:table-cell; min-height:50px; padding-top: 20px; padding-bottom: 20px; 
+    border-top:1px solid #ccc; }
+    .tb1 tr:last-child td { border-bottom:1px solid #ccc; }
+    .tb1 td.td1 { vertical-align:top; width:100px; text-align:left; font-size:32px; 
+        color:#075d46; font-weight: 100; }
+    .tb1 td a { display:block; color:#333; transition-duration:0.4s; }
+    .tb1 td a .td_tit { width:1100px; font-size:28px; line-height:1.4; font-weight:200;  padding-right: 36px;
+        white-space: nowrap; overflow:hidden; text-overflow: ellipsis; }
+    .tb1 td a .td_com { width:1100px; font-size:18px; line-height:2.2; font-weight:100; 
+        color:#999;  padding-right: 36px;
+        white-space: nowrap; overflow:hidden; text-overflow: ellipsis; }
+    .tb1 td a:hover { color:#075d46; }
+    .tb1 td a:hover .td_com { color:#075d46;}
 
 
     #page5 { background-color: #eee; color:#222; }
@@ -368,77 +368,76 @@
             </figure>
             <!-- section.page#page$*5>h2.page_title{페이지제목$}+div.page_wrap -->
             <section class="page" id="page1">
-                <h2 class="page_title" style="display:none;">SOLUTION</h2>
+                <h2 class="page_title" style="display:none;">더 넓은 미래를 향한 꿈의 도전</h2>
                 <div class="page_wrap">
                     <div class="tit_box">
-                        <h3 class="sub_title">BUSINESS</h3>
-                        <h2 class="main_title">SOLUTION</h2>
+                        <h3 class="sub_title">Recruit</h3>
+                        <h2 class="main_title">더 넓은 미래를 향한 꿈의 도전</h2>
                     </div>
                     <article class="pg1_btn_box">
                         <!-- (input[type=radio][name=pg_ra]#pg1_ra$.pg1_ra+label[for=pg1_ra$].item$)*6 -->
                         <input type="radio" name="pg_ra" id="pg1_ra1" class="pg1_ra" checked>
-                        <label for="pg1_ra1" class="item1">CJ프레시웨이</label>
+                        <label for="pg1_ra1" class="item1">People</label>
                         <input type="radio" name="pg_ra" id="pg1_ra2" class="pg1_ra">
-                        <label for="pg1_ra2" class="item2">식자재 유통 솔루션</label>
+                        <label for="pg1_ra2" class="item2">Challenge</label>
                         <input type="radio" name="pg_ra" id="pg1_ra3" class="pg1_ra">
-                        <label for="pg1_ra3" class="item3">푸드 서비스 솔루션</label>
+                        <label for="pg1_ra3" class="item3">Collaboration</label>
                         <input type="radio" name="pg_ra" id="pg1_ra4" class="pg1_ra">
-                        <label for="pg1_ra4" class="item4">상품 구매</label>
+                        <label for="pg1_ra4" class="item4">Customer</label>
                         <input type="radio" name="pg_ra" id="pg1_ra5" class="pg1_ra">
-                        <label for="pg1_ra5" class="item5">식품 안전</label>
+                        <label for="pg1_ra5" class="item5">Glolbality</label>
                         <input type="radio" name="pg_ra" id="pg1_ra6" class="pg1_ra">
-                        <label for="pg1_ra6" class="item6">물류 시스템</label>
+                        <label for="pg1_ra6" class="item6">Passion</label>
                         <!-- div.ban_fr>ul.ban_box>li.item$>img.pic+(div.ban_tit_box>h2.ban_tit1+h2.ban_tit2+p.ban_com) -->
                         <div class="ban_fr">
                             <ul class="ban_box">
                                 <li class="item1">
-                                    <img src="./images/main_solution_01.jpg" alt="CJ프레이시웨이" class="pic">
+                                    <img src="./images/main_solution_01.jpg" alt="인재존중의 기업문화를 실천하는 모비스인" class="pic">
                                     <div class="ban_tit_box">
                                         <h2 class="ban_tit1">01</h2>
-                                        <h2 class="ban_tit2">CJ프레시웨이</h2>
-                                        <p class="ban_com">Food Business Partner<br>
-                                            Creating the Success Way
+                                        <h2 class="ban_tit2">People</h2>
+                                        <p class="ban_com">인재존중의 기업문화를 실천하는 모비스인<br>
                                         </p>
                                     </div>
                                 </li>
                                 <li class="item2">
-                                    <img src="./images/main_solution_02.jpg" alt="식자재 유통 솔루션" class="pic">
+                                    <img src="./images/main_solution_02.jpg" alt="도전적 추진력으로 실행하는 모비스인" class="pic">
                                     <div class="ban_tit_box">
                                         <h2 class="ban_tit1">02</h2>
-                                        <h2 class="ban_tit2">식자재 유통 솔루션</h2>
-                                        <p class="ban_com">고객 맞춤 최적의 식자재 유통 솔루션</p>
+                                        <h2 class="ban_tit2">Challenge</h2>
+                                        <p class="ban_com">도전적 추진력으로 실행하는 모비스인</p>
                                     </div>
                                 </li>
                                 <li class="item3">
-                                    <img src="./images/main_solution_03.jpg" alt="푸드 서비스 솔루션" class="pic">
+                                    <img src="./images/main_solution_03.jpg" alt="소통과 협력에 앞장서는 모비스인" class="pic">
                                     <div class="ban_tit_box">
                                         <h2 class="ban_tit1">03</h2>
-                                        <h2 class="ban_tit2">푸드 서비스 솔루션</h2>
-                                        <p class="ban_com">다양한 경로 맞춤 전문적인 푸드 서비스 솔루션</p>
+                                        <h2 class="ban_tit2">Collaboration</h2>
+                                        <p class="ban_com">소통과 협력에 앞장서는 모비스인</p>
                                     </div>
                                 </li>
                                 <li class="item4">
-                                    <img src="./images/main_solution_04.jpg" alt="상품 구매" class="pic">
+                                    <img src="./images/main_solution_04.jpg" alt="고객만족을 최우선시하는 모비스인" class="pic">
                                     <div class="ban_tit_box">
                                         <h2 class="ban_tit1">04</h2>
-                                        <h2 class="ban_tit2">상품 구매</h2>
-                                        <p class="ban_com">높은 품질 기준으로 차별화된 상품 경쟁력</p>
+                                        <h2 class="ban_tit2">Customer</h2>
+                                        <p class="ban_com">고객만족을 최우선시하는 모비스인</p>
                                     </div>
                                 </li>
                                 <li class="item5">
-                                    <img src="./images/main_solution_05.jpg" alt="식품 안전" class="pic">
+                                    <img src="./images/main_solution_05.jpg" alt="글로벌 경쟁력을 갖춘 모비스인" class="pic">
                                     <div class="ban_tit_box">
                                         <h2 class="ban_tit1">05</h2>
-                                        <h2 class="ban_tit2">식품 안전</h2>
-                                        <p class="ban_com">업계 최고 수준의 식품 안전 솔루션</p>
+                                        <h2 class="ban_tit2">Glolbality</h2>
+                                        <p class="ban_com">글로벌 경쟁력을 갖춘 모비스인</p>
                                     </div>
                                 </li>
                                 <li class="item6">
-                                    <img src="./images/main_solution_06.jpg" alt="물류 시스템" class="pic">
+                                    <img src="./images/main_solution_06.jpg" alt="도전과 열정으로 내재된 핵심가치를 실천하는 모비스인" class="pic">
                                     <div class="ban_tit_box">
                                         <h2 class="ban_tit1">06</h2>
-                                        <h2 class="ban_tit2">물류 시스템</h2>
-                                        <p class="ban_com">품질과 안전을 지키는 선진 물류 솔루션</p>
+                                        <h2 class="ban_tit2">Passion</h2>
+                                        <p class="ban_com">도전과 열정으로 내재된 핵심가치를 실천하는 모비스인</p>
                                     </div>
                                 </li>
                             </ul>
@@ -487,27 +486,14 @@
                 </div>
             </section>
             <section class="page" id="page3">
-                <h2 class="page_title" style="display:none">NET-ZEROREPORT</h2>
+                <h2 class="page_title" style="display:none">IR</h2>
                 <div class="page_wrap">
                     <div class="tit_box">
                         <h3 class="sub_title">IR</h3>
-                        <h2 class="main_title" style="color:#fff">NET-ZEROREPORT</h2>
+                        <h2 class="main_title" style="color:#fff">INVESTOR RELATIONS</h2>
                     </div>
-                            </li>
-                            <li class="right">
-                                <a href="" class="item1"><span></span></a>
-                                <a href="" class="item2"><span></span></a>
-                                <a href="" class="item3"><span></span></a>
-                            </li>
-                        </ul>
-                    </article>
-                </div>
-            </section>
-            <section class="page" id="page4">
-                <h2 class="page_title">투자정보</h2>
-                <div class="page_wrap">
-                     <!-- article.col_fr>ul.col_box>li.left+li.right -->
-                     <article class="col_fr">
+                    <!-- article.col_fr>ul.col_box>li.left+li.right -->
+                    <article class="col_fr">
                         <ul class="col_box">
                             <li class="left">
                                 <p class="one_line"><span class="dot">실시간 주가정보</span> <span class="gtxt">20230418 기준</span></p>
@@ -551,47 +537,112 @@
                     </article>
                 </div>
             </section>
-        </div>
-    </section>
-    <section class="page" id="page5">
-        <h2 class="page_title">고객상담센터</h2>
-        <div class="page_wrap">
-        <!--article.colm_fr>(h3.lst_tit+(ul.lst$*2>li.item$*3>h3.item_tit+a.item_more{바로가기}))*2-->
-        <article class="colm_fr">
-            <h3 class="lst_tit">비즈니스 상담센터</h3>
-            <ul class="lst1">
-                <li class="item1">
-                    <h3 class="item_tit">A/S부품</h3>
-                    <a href="" class="item_more">바로가기</a>
-                </li>
-                <li class="item2">
-                    <h3 class="item_tit">멀티제품</h3>
-                    <a href="" class="item_more">바로가기</a>
-                </li>
-                <li class="item3">
-                    <h3 class="item_tit">Q&A</h3>
-                    <a href="" class="item_more">바로가기</a>
-                </li>
-            </ul>
-            <h3 class="lst_tit">간편상담</h3>
-            <ul class="lst1">
-                <li class="item1">
-                    <h3 class="item_tit">용품</h3>
-                    <a href="" class="item_more">바로가기</a>
-                </li>
-                <li class="item2">
-                    <h3 class="item_tit">부품인증제</h3>
-                    <a href="" class="item_more">바로가기</a>
-                </li>
-                <li class="item3">
-                    <h3 class="item_tit">현대모비스</h3>
-                    <a href="" class="item_more">바로가기</a>
-                </li>
-            </ul>
-        </article>
-        </div>
-    </section>
-</div>
+         </div>
+            </section>
+            <section class="page" id="page4">
+                <h2 class="page_title" style="display:none">PRESS</h2>
+                <div class="page_wrap">
+                    <div class="tit_box">
+                        <h3 class="sub_title">PRESS</h3>
+                        <h2 class="main_title">NOW IS</h2>
+                    </div>
+                    <a href="" class="more">+</a>
+                    <!-- article.board_fr>table.tb1>tbody>tr*5>td.td1+(td.td2>a>h3.td_tit+p.td_com) -->
+                    <article class="board_fr">
+                        <table class="tb1">
+                            <tbody>
+                                <tr>
+                                    <td class="td1">5</td>
+                                    <td class="td2">
+                                        <a href="">
+                                            <h3 class="td_tit">현대모비스 2023 상해모터쇼 참가 ‘중국에서 기록 넘본다’… 올해 중국시장 10억불 수주 목표!</h3>
+                                            <p class="td_com">현대모비스가 중국 정부의 ‘위드 코로나’ 정책 이후 개최하는 첫 대형 모터쇼인 상해 모터쇼에 참가해 중국 시장 공략을 가속화한다.
+                                                 이번 모터쇼에서 현대모비스는</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td1">4</td>
+                                    <td class="td2">
+                                        <a href="">
+                                            <h3 class="td_tit">현대모비스, ‘돌돌 말리는 車 디스플레이’ 세계 최초로 선보인다!</h3>
+                                            <p class="td_com">현대모비스가 세계 최초로 차량용 롤러블 디스플레이(Rollable Display) 개발에 성공했다. 주행 상황과 이용 목적에 따라 디스플레이 크기를 조절할 수 있고, 부피를 최소화해</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td1">3</td>
+                                    <td class="td2">
+                                        <a href="">
+                                            <h3 class="td_tit">현대모비스 <2023 서울모빌리티쇼> 참가, 미래형 PBV ‘엠비전 TO·HI’ 국내 관람객에게 첫 공개!…</h3>
+                                            <p class="td_com">현대모비스가 이달 31일부터 4월 9일까지 경기도 일산 킨텍스에서 열리는 <2023 서울모빌리티쇼>에 참가해 미래 모빌리티 혁신 기술을 공개한다. 올해 초 CES에서 호평 받은 엠비전 시리즈를 비롯해</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td1">2</td>
+                                    <td class="td2">
+                                        <a href="">
+                                            <h3 class="td_tit">현대모비스, ‘車바퀴로 들어간 전기모터’ 인휠시스템 기술 개발!</h3>
+                                            <p class="td_com">각 바퀴에 구동 모터를 달아 동력 성능을 극대화하고 네 바퀴 독립 제어로 최적의 주행 성능을 제공하는 전동화 시스템이 개발됐다. 차량 바퀴에 자유를 줘 사용자가 지금까지 경험하지 못했던</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="td1">1</td>
+                                    <td class="td2">
+                                        <a href="">
+                                            <h3 class="td_tit">“모빌리티의 기본은 안전” 현대모비스, 에어백 기술 고도화로 안전 혁신 이끈다</h3>
+                                            <p class="td_com">미래 모빌리티 기술 진화에 따라 차량의 형태가 다양해지면서, 탑승자를 보호하는 안전 기술도 함께 고도화되고 있다. 차량 내 대표적 안전 부품인 에어백의 기술적 발전이 대표적이다. 이러한 가운데</p>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                </div>
+            </section>
+            <section class="page" id="page5">
+                <h2 class="page_title" style="display:none">CS CENTER</h2>
+                <div class="page_wrap">
+                    <div class="tit_box">
+                        <h3 class="sub_title">CS CENTER</h3>
+                        <h2 class="page_title">고객상담센터</h2>
+                        <div class="page_wrap">
+                        <!--article.colm_fr>(h3.lst_tit+(ul.lst$*2>li.item$*3>h3.item_tit+a.item_more{바로가기}))*2-->
+                        <article class="colm_fr">
+                            <h3 class="lst_tit">비즈니스 상담센터</h3>
+                            <ul class="lst1">
+                                <li class="item1">
+                                    <h3 class="item_tit">A/S부품</h3>
+                                    <a href="" class="item_more">바로가기</a>
+                                </li>
+                                <li class="item2">
+                                    <h3 class="item_tit">멀티제품</h3>
+                                    <a href="" class="item_more">바로가기</a>
+                                </li>
+                                <li class="item3">
+                                    <h3 class="item_tit">Q&A</h3>
+                                    <a href="" class="item_more">바로가기</a>
+                                </li>
+                            </ul>
+                            <h3 class="lst_tit">간편상담</h3>
+                            <ul class="lst1">
+                                <li class="item1">
+                                    <h3 class="item_tit">용품</h3>
+                                    <a href="" class="item_more">바로가기</a>
+                                </li>
+                                <li class="item2">
+                                    <h3 class="item_tit">부품인증제</h3>
+                                    <a href="" class="item_more">바로가기</a>
+                                </li>
+                                <li class="item3">
+                                    <h3 class="item_tit">현대모비스</h3>
+                                    <a href="" class="item_more">바로가기</a>
+                                </li>
+                            </ul>
+                        </article>
+                        </div>
 <footer class="ft">
     <article class="row row1">
         <div class="ft_wrap">

@@ -1,0 +1,78 @@
+/* 풀페이지 */
+.fullpage { clear:both; position:relative; width: 100vw; height:100vh;
+    overflow:hidden;  }
+.fullpage > * { display:block; width: 100%; }
+
+/* 배너 */
+.ban_fr { clear:both; width: 1280px; height: 550px; padding-top: 40px; overflow:hidden; }
+.ban_fr .ban_box { width: 600%; height: 550px; transition-duration:0.6s; }
+.ban_fr .ban_box li { width: 1280px; float:left; height: 550px; }
+.ban_fr .ban_box li .pic { display:block; width: 840px; height: 550px; float:left;
+border-radius:40px;  }
+.ban_fr .ban_box li .ban_tit_box { float:right; width: 400px; height: 550px; position:relative; 
+    background-color: #f1f1f1; border-radius:40px; }
+.ban_fr .ban_box li .ban_tit_box .ban_tit1 { font-size:64px; line-height:3; color:#075d46; 
+margin-left:50px; }
+.ban_fr .ban_box li .ban_tit_box .ban_tit2 { position:absolute; left:50px; bottom: 120px;
+        font-size:36px; line-height:2; color:#075d46; }
+.ban_fr .ban_box li .ban_tit_box .ban_com { position:absolute; bottom:50px;
+    left: 50px;  font-size:16px; color:#666; }
+
+/* ul > li 3컬럼 */
+.grid_fr { clear:both; width: 1280px; }
+.grid_fr .grid_box { clear:both; width: 1280px; padding-top: 40px; }
+.grid_box li { width: 410px; margin-right: 25px; float:left; height: 624px; }
+.grid_box li:last-child { margin-right: 0; }
+.grid_box li a { display:block; color:#fff; background-position:center center; 
+background-repeat: no-repeat; border-radius:40px; margin-top: 25px; height: 300px;
+padding-top:6em;  padding-left: 2em; font-size:30px; box-sizing:border-box; }
+.grid_box li a .grid_tit { line-height: 1.8; }
+.grid_box li a.item3 .grid_tit { padding-top:9.2em; line-height: 1.8; }
+.grid_box li a .grid_com { font-size:16px; }
+
+/* ul > li 2컬럼 */
+.col_fr { clear:both; width: 1280px; padding-top: 40px; }
+.col_fr .col_box { clear: both; width: 1280px; }
+.col_fr .col_box li.left { float:left; width: 844px; height: 458px; 
+background-color:#fff; color:#000; border-radius:25px; box-sizing: border-box; 
+padding:38px; }
+.one_line { font-size:28px; line-height: 2; padding-bottom:18px; }    
+.inv_p { clear:both; }
+.large_txt { float:left; font-size:70px; padding-right: 40px; }
+.small_txt { float:left; font-size:18px; padding-top: 14px; line-height: 1.8; }
+.col_dl { clear:both; padding-top:30px;  }
+.col_dl dd { width:250px; float:left; margin:20px 0px; font-size:22px; font-weight:100; 
+line-height: 1.6; }
+.col_dl dd .d_tit { font-weight: 200; color:#999; }
+.col_dl dd .d_com { font-weight: 100; }
+.gtxt { color:#37e3b5; padding-left: 24px; }
+.ltxt { color:#999; }
+.dot:after { content:"|"; padding-left: 24px; }
+.col_fr .col_box li.right { float:right; width: 410px; height: 458px; }
+.col_fr .col_box li.right a { display:block; background-color: #fff; color:#333; 
+    height: 135px; line-height: 135px;  margin-bottom: 26px; border-radius:25px;   }
+.col_fr .col_box li.right a span { padding-left: 20px; }
+.col_fr .col_box li.right a:after { content:""; display:block; width: 28px; height: 35px; 
+ float:right; margin-top:50px; margin-right:20px; }
+.col_fr .col_box li.right a span:before { content:""; display:block; float:left; 
+width:79px; height:76px; margin-top: 30px; margin-left: 20px; } 
+
+/* 테이블 태그 2컬럼 */
+.more { display:block; position:absolute; top:60px; right:200px; font-size:68px; font-weight:bold; 
+    width:80px; height:80px; border:1px solid #ccc; text-align: center; color:#999; }
+.board_fr { clear:both; width: 1280px; margin:0px auto;  padding-top: 40px; }
+.tb1 { clear:both; display:table; border-collapse: collapse;  }
+.tb1 tr { display:table-row;  width: 1280px; }
+.tb1 td { display:table-cell; min-height:50px; padding-top: 20px; padding-bottom: 20px; 
+border-top:1px solid #ccc; }
+.tb1 tr:last-child td { border-bottom:1px solid #ccc; }
+.tb1 td.td1 { vertical-align:top; width:100px; text-align:left; font-size:32px; 
+    color:#075d46; font-weight: 100; }
+.tb1 td a { display:block; color:#333; transition-duration:0.4s; }
+.tb1 td a .td_tit { width:1100px; font-size:28px; line-height:1.4; font-weight:200;  padding-right: 36px;
+    white-space: nowrap; overflow:hidden; text-overflow: ellipsis; }
+.tb1 td a .td_com { width:1100px; font-size:18px; line-height:2.2; font-weight:100; 
+    color:#999;  padding-right: 36px;
+    white-space: nowrap; overflow:hidden; text-overflow: ellipsis; }
+.tb1 td a:hover { color:#075d46; }
+.tb1 td a:hover .td_com { color:#075d46;}
