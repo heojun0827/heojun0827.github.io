@@ -118,7 +118,7 @@
 
     .page { clear:both; position:relative; width: 100vw; height:100vh; }
     .page_wrap { clear:both; width: 1400px; margin: 0 auto; }
-    .page_title { text-align: left; font-size:48px; padding-top: 1.5em; }
+    .page_title { text-align: left; font-size:48px; padding-top: 1.5em; float:left; }
 
     #page1 { background-color: #fff; color:#333; }
     #page1 .page_wrap { width:1280px; padding-top: 80px; }
@@ -249,7 +249,7 @@ padding:38px; }
     .colm_fr .lst2 .item3:before { background-position: 0px -460px; }
     
     
-    #ft { clear:both;  }
+    #ft { clear:both; }
     .ft .row { clear:both; padding-top: 25px; padding-bottom: 25px; min-height:60px; }
     .ft .row1 { background-color:gray;  }
     .ft .fnb li { float:left; margin-right: 50px; line-height: 60px; }
@@ -258,7 +258,7 @@ padding:38px; }
     .ft #favo { display:block; line-height: 60px; height: 60px; width: 200px; text-align: center;
     font-size: 18px;  }
 
-    .ft .row2 { background-color: black; height: 224px; }
+    .ft .row2 { background-color: black; height: 224px;}
     .ft .slogan { font-size: 36px; color:#e0e0e0; }
     .ft .ft_link_fr dl { float:left; font-size:16px; line-height: 32px; padding-left: 28px; }
     .ft .ft_link_fr dl a { color:#a0a0a0; }
@@ -280,7 +280,7 @@ padding:38px; }
     border-radius:35px; box-sizing: border-box; padding: 6px; font-size:12px; padding-top:15px; 
     overflow:hidden; box-shadow:1px 1px 6px #333; }
     .fix_area .counsel { background-color:rgba(255,255,255,0.75); color:#333; }
-    .fix_area .totop { background-color:#075d46; color:#fff; margin-top: 20px; }
+    .fix_area .totop { background-color:gray; color:#fff; margin-top: 20px; }
     </style>
 
 </head>
@@ -290,10 +290,11 @@ padding:38px; }
             <nav class="tnb">
                 <div class="tnb+wrap">
                     <ul class="right_tnb">
-                        <li><a href="" class="sns1">A1</a></li>
-                        <li><a href="" class="sns2">A2</a></li>
-                        <li><a href="" class="sns3">A3</a></li>
-                        <li><a href="" class="sns4">A4</a></li>
+                        <li><a href="login.html">로그인</a></li>
+                        <li><a href="agreement.html">회원가입</a></li>
+                        <li><a href="https://blog.naver.com/e_mobis" class="sns1">A1</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCPezquYT5eM4Uv1VfhIE-hA" class="sns2">A2</a></li>
+                        <li><a href="https://www.instagram.com/now_mobis/" class="sns3">A3</a></li>
                     </ul>
                 </div>
             </nav>
@@ -304,18 +305,18 @@ padding:38px; }
                     </a>
                         <nav class="gnb">
                             <ul class="gnb_fr">
-                                <li><a href="">회사정보</a>
+                                <li><a href="sub1.html">회사정보</a>
                                     <div class="sub">
                                         <ul class="dp2">
-                                            <li><a href="">회사개요</a></li>
-                                            <li><a href="">인재채용</a></li>
-                                            <li><a href="">뉴스룸</a></li>
-                                            <li><a href="">글로벌네트워크</a></li>
+                                            <li><a href="sub1.html#page1">회사개요</a></li>
+                                            <li><a href="sub1.html#page2">인재채용</a></li>
+                                            <li><a href="sub1.html#page3">뉴스룸</a></li>
+                                            <li><a href="sub1.html#page4">글로벌네트워크</a></li>
                                         </ul>
                                     </div>      
                                 </li>
 
-                                <li><a href="">모빌리티 기술</a>
+                                <li><a href="sub2.html">모빌리티 기술</a>
                                     <div class="sub">
                                         <ul class="dp2">
                                             <li><a href="">제품</a></li>
@@ -325,25 +326,25 @@ padding:38px; }
                                     </div>      
                                 </li>
                                 
-                                <li><a href="">지속가능경영</a>
+                                <li><a href="sub2.html">지속가능경영</a>
                                     <div class="sub">
                                         <ul class="dp2">
-                                            <li><a href="">지속가능경영</a></li>
-                                            <li><a href="">컴플라이언스경영</a></li>
-                                            <li><a href="">환경경영</a></li>
-                                            <li><a href="">안전보건경영</a></li>
-                                            <li><a href="">사회 공헌</a></li>
+                                            <li><a href="sub2.html#page1">지속가능경영</a></li>
+                                            <li><a href="sub2.html#page2">컴플라이언스경영</a></li>
+                                            <li><a href="sub2.html#page3">환경경영</a></li>
+                                            <li><a href="sub2.html#page4">안전보건경영</a></li>
+                                            <li><a href="sub2.html#page5">사회 공헌</a></li>
                                         </ul>
                                     </div>      
                                 </li>
-                                <li><a href="">투자정보</a>
+                                <li><a href="sub3.html">투자정보</a>
                                     <div class="sub">
                                         <ul class="dp2">
-                                            <li><a href="">일반정보</a></li>
-                                            <li><a href="">재무정보</a></li>
-                                            <li><a href="">주가정보</a></li>
-                                            <li><a href="">주요보고서</a></li>
-                                            <li><a href="">전자정보&공시</a></li>
+                                            <li><a href="sub3.html#page1">일반정보</a></li>
+                                            <li><a href="sub3.html#page2">재무정보</a></li>
+                                            <li><a href="sub3.html#page3">주가정보</a></li>
+                                            <li><a href="sub3.html#page4">주요보고서</a></li>
+                                            <li><a href="sub3.html#page5">전자정보&공시</a></li>
                                         </ul>
                                     </div>      
                                 </li>
@@ -608,41 +609,45 @@ padding:38px; }
                     <div class="tit_box">
                         <h3 class="sub_title">CS CENTER</h3>
                         <h2 class="page_title">고객상담센터</h2>
-                        <div class="page_wrap">
-                        <!--article.colm_fr>(h3.lst_tit+(ul.lst$*2>li.item$*3>h3.item_tit+a.item_more{바로가기}))*2-->
-                        <article class="colm_fr">
-                            <h3 class="lst_tit">비즈니스 상담센터</h3>
-                            <ul class="lst1">
-                                <li class="item1">
-                                    <h3 class="item_tit">A/S부품</h3>
-                                    <a href="" class="item_more">바로가기</a>
-                                </li>
-                                <li class="item2">
-                                    <h3 class="item_tit">멀티제품</h3>
-                                    <a href="" class="item_more">바로가기</a>
-                                </li>
-                                <li class="item3">
-                                    <h3 class="item_tit">Q&A</h3>
-                                    <a href="" class="item_more">바로가기</a>
-                                </li>
-                            </ul>
-                            <h3 class="lst_tit">간편상담</h3>
-                            <ul class="lst1">
-                                <li class="item1">
-                                    <h3 class="item_tit">용품</h3>
-                                    <a href="" class="item_more">바로가기</a>
-                                </li>
-                                <li class="item2">
-                                    <h3 class="item_tit">부품인증제</h3>
-                                    <a href="" class="item_more">바로가기</a>
-                                </li>
-                                <li class="item3">
-                                    <h3 class="item_tit">현대모비스</h3>
-                                    <a href="" class="item_more">바로가기</a>
-                                </li>
-                            </ul>
-                        </article>
+                            <div class="page_wrap">
+                            <!--article.colm_fr>(h3.lst_tit+(ul.lst$*2>li.item$*3>h3.item_tit+a.item_more{바로가기}))*2-->
+                            <article class="colm_fr">
+                                <h3 class="lst_tit">비즈니스 상담센터</h3>
+                                <ul class="lst1">
+                                    <li class="item1">
+                                        <h3 class="item_tit">A/S부품</h3>
+                                        <a href="" class="item_more">바로가기</a>
+                                    </li>
+                                    <li class="item2">
+                                        <h3 class="item_tit">멀티제품</h3>
+                                        <a href="" class="item_more">바로가기</a>
+                                    </li>
+                                    <li class="item3">
+                                        <h3 class="item_tit">Q&A</h3>
+                                        <a href="" class="item_more">바로가기</a>
+                                    </li>
+                                </ul>
+                                <h3 class="lst_tit">간편상담</h3>
+                                <ul class="lst1">
+                                    <li class="item1">
+                                        <h3 class="item_tit">용품</h3>
+                                        <a href="" class="item_more">바로가기</a>
+                                    </li>
+                                    <li class="item2">
+                                        <h3 class="item_tit">부품인증제</h3>
+                                        <a href="" class="item_more">바로가기</a>
+                                    </li>
+                                    <li class="item3">
+                                        <h3 class="item_tit">현대모비스</h3>
+                                        <a href="" class="item_more">바로가기</a>
+                                    </li>
+                                </ul>
+                            </article>
                         </div>
+                    </div>
+                </div>
+            </section>
+
 <footer class="ft">
     <article class="row row1">
         <div class="ft_wrap">
@@ -700,7 +705,7 @@ padding:38px; }
                 </dl>
                 <dl class="ft_link item3">
                     <dt>지속가능경영</dt>
-                    <dd><a href="">지속가능경영/a></dd>
+                    <dd><a href="">지속가능경영</a></dd>
                     <dd><a href="">컴플라이언스경영</a></dd>
                     <dd><a href="">환경경영</a></dd>
                     <dd><a href="">보전경영</a></dd>

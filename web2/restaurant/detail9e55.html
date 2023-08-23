@@ -1,0 +1,352 @@
+
+
+<!-- localhost(127.0.0.1):portnumber/projectname => Context Path -->
+
+  
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from localhost:8081/restaurant/detail?rs_idx=6&page=1&revPage=8 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 23 Aug 2023 07:14:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>맛집 리스트 상세보기</title>
+                
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="resources/assets/favicon.html" />
+        
+        <!-- CSS (includes Bootstrap) -->
+        <link href="../resources/css/styles.css" rel="stylesheet" />
+      <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+      <script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+      <script src="../../maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>     
+               
+       <!-- Custom styles for this template -->
+       <!--<link href="/resources/css/product.css" rel="stylesheet">-->
+       <link href="../resources/css/carousel.css" rel="stylesheet">
+        <script src="../../code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="../resources/js/color-modes.js"></script>
+ <!--   
+   <style>
+      .container-wrap {
+         margin-top: 120px;
+         position: relative;
+         min-height: 100%;
+          padding-bottom: 250px;
+         bottom:0px;
+      }
+      
+      .shadow {
+         width: 1000px;
+         text-align: center;
+         display: flex;
+         margin: 0 auto;
+      }
+   </style> -->
+</head>
+<body>
+
+<!-- Header -->
+
+
+<!--  -->
+<!-- localhost(127.0.0.1):portnumber/projectname : Context Path -->
+
+    <head>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="resources/assets/favicon.html" />
+        
+        <!-- CSS (includes Bootstrap) -->
+        <link href="../resources/css/styles.css" rel="stylesheet" />
+
+	</head>
+
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container px-5">
+			<img src="../resources/images/logo_wh.png" alt="로고"
+				style="width: 30px; height: auto;">
+			<a href="../index.html" class="navbar-brand"
+				style="margin-left: 10px; font-size: 1.5em;" alt="다시 홈으로">JEJUMATJIP</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="navbar navbar-expand-lg">
+				<ul class="nav nav-pills">
+					<li class="nav-item"><a class="nav-link" href="main.html">맛집리스트</a></li>
+					<li class="nav-item"><a class="nav-link" href="../notice/main.html">공지사항</a></li>
+					<li class="nav-item"><a class="nav-link" href="../qna/main.html">QnA</a></li>
+				</ul>
+			</div>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            
+							<li class="nav-item"><a href="../user/login.html" class="nav-link">로그인</a></li>
+							<li class="nav-item"><a href="../user/join.html" class="nav-link">회원가입</a></li>
+						               	
+           							
+						
+        </ul>
+			</div>
+		</div>
+	</nav>
+   
+
+<div class="container" style="margin-top:100px">
+   <div class="row">
+      <div class="col-sm-12">
+         <div class="card shadow">
+            <div class="card-body" style="text-align: left;">
+               <div class="form-group">
+               <h3 class="text-center card-title"><strong>맛집 리스트 상세보기</strong></h3>
+                  <label for="rs_idx">글 번호</label>
+                  <input type="text" id="rs_idx" name="rs_idx" class="form-control" value="6" disabled="disabled"/>
+               </div>
+               <div class="form-group">
+                  <label for="rs_region_cate">지역분류</label>
+                  <input type="text" id="rs_region_cate" name="rs_region_cate" class="form-control" value="서귀포" disabled="disabled"/>
+               </div>      
+               <div class="form-group">
+                  <label for="rs_food_cate">음식분류</label>
+                  <input type="text" id="rs_food_cate" name="rs_food_cate" class="form-control" value="식사" disabled="disabled"/>
+               </div>                     
+               <div class="form-group">               
+                  <label for="rs_name">이름</label>
+                  <input type="text" id="rs_name" name="rs_name" class="form-control" value="가시아방" disabled="disabled"/>
+               </div>
+               <div class="form-group">
+                  <label for="rs_phone">전화번호</label>
+                  <input type="text" id="rs_phone" name="rs_phone" class="form-control" value="064-783-0987" disabled="disabled"/>
+               </div>
+               <div class="form-group">
+                  <label for="rs_addr">주소</label>
+                  <input type="text" id="rs_addr" name="rs_addr" class="form-control" value="제주특별자치도 서귀포시 성산읍 섭지코지로 10" disabled="disabled"/>
+               </div>            
+               <div class="form-group">
+                  <label for="rs_content">글내용</label>
+                  <textarea id="rs_content" name="rs_content" class="form-control" rows="10" style="resize:none" disabled="disabled">곱배기가 아닌데도 불구하고 푸짐한 양의 국물 고기국수, 비빔국수를 맛있게 요리해내는 성산의 향토음식점.</textarea>
+               </div>
+               
+                  <div class="form-group">
+                     <label for="rs_file">첨부 이미지</label>
+                     <img src="../resources/upload/seoguipo02.jpg" width="100%"/>                  
+                  </div>
+               
+               <div class="form-group">
+                  <div class="text-right">
+                     <a href="main2679.html?page=1" class="btn btn-secondary">목록보기</a>
+                     
+                     
+                  </div>
+               </div>               
+            </div>
+         </div>
+      </div>
+      <div class="col-sm-12" style="margin-top: 20px;">
+         <div class="card shadow">
+            <div class="card-body">
+               <h3 style="margin-bottom: 30px;"><strong>가시아방 의 후기</strong></h3>
+               <table class="table table-hover" id='맛집리스트 상세 후기' style="width=100%">
+                  <tbody>
+                     <tr class="exline" style="border-bottom: 2px solid #ddd;">
+                     <th class="text-center d-none d-md-table-cell">제목</th>
+                     <th class="text-center d-none d-md-table-cell">별점</th>
+                     <th class="text-center d-none d-md-table-cell">리뷰어</th>
+                     <th class="text-center d-none d-md-table-cell">이미지</th>
+                     <th class="text-center d-none d-md-table-cell">내용</th>
+                     <th class="text-center d-none d-md-table-cell">작성일</th>
+                     <th class="text-center d-none d-md-table-cell"></th>
+                     </tr>
+                     </th>
+                     <th class="text-center d-none d-md-table-cell">제목97</th><!-- 제목 -->
+                     <th>
+                     <!-- 별점 -->
+                        
+                           <h7>★</h7>
+                        
+                           <h7>★</h7>
+                        
+                           <h7>★</h7>
+                        
+                           <h7>★</h7>
+                        
+                           <h7>★</h7>
+                        
+                     </th>
+                     <th class="text-center d-none d-md-table-cell">user69</th><!-- 리뷰어 -->
+                     <th class="text-center d-none d-md-table-cell"></th>
+                     <th class="text-center d-none d-md-table-cell h6">내용97</th><!-- 후기내용 -->
+                     <th class="text-center w-25 h6">2023-07-28 15:34:24</th><!-- 작성일 -->
+                     <th class="text-right">
+                     <!-- 수정 삭제 -->
+                        
+                     </th>
+                     </tr>
+                     
+                     
+                     </th>
+                     <th class="text-center d-none d-md-table-cell">제목101</th><!-- 제목 -->
+                     <th>
+                     <!-- 별점 -->
+                        
+                           <h7>★</h7>
+                        
+                     </th>
+                     <th class="text-center d-none d-md-table-cell">user65</th><!-- 리뷰어 -->
+                     <th class="text-center d-none d-md-table-cell"></th>
+                     <th class="text-center d-none d-md-table-cell h6">내용101</th><!-- 후기내용 -->
+                     <th class="text-center w-25 h6">2023-07-28 15:34:24</th><!-- 작성일 -->
+                     <th class="text-right">
+                     <!-- 수정 삭제 -->
+                        
+                     </th>
+                     </tr>
+                     
+                     
+                     </th>
+                     <th class="text-center d-none d-md-table-cell">제목14</th><!-- 제목 -->
+                     <th>
+                     <!-- 별점 -->
+                        
+                           <h7>★</h7>
+                        
+                           <h7>★</h7>
+                        
+                           <h7>★</h7>
+                        
+                     </th>
+                     <th class="text-center d-none d-md-table-cell">user65</th><!-- 리뷰어 -->
+                     <th class="text-center d-none d-md-table-cell"></th>
+                     <th class="text-center d-none d-md-table-cell h6">내용14</th><!-- 후기내용 -->
+                     <th class="text-center w-25 h6">2023-07-28 15:34:24</th><!-- 작성일 -->
+                     <th class="text-right">
+                     <!-- 수정 삭제 -->
+                        
+                     </th>
+                     </tr>
+                     
+                     
+                     </tr>
+                    </tbody>                  
+                  </table>
+                  <!-- 리뷰 작성하기 -->
+                  <div class="text-right">
+                     <a href="../user/invalidUser.html?rs_idx=6&amp;page=1" class="btn btn-secondary">리뷰 작성하기</a>
+                  </div>
+               </div>
+               <div class="d-none d-md-block">
+                  <ul class="pagination justify-content-center">
+                  
+                     
+                     
+                        <li class="page-item">
+                           <a href="detail4ced.html?rs_idx=6&amp;page=1&amp;revPage=5" class="page-link">이전</a>
+                        </li>
+                     
+                  
+                  
+                  
+                     
+                     
+                        <li class="page-item">
+                           <a href="detaile75c.html?rs_idx=6&amp;page=1&amp;revPage=6" class="page-link">6</a>
+                        </li>
+                     
+                  
+                  
+                  
+                     
+                     
+                        <li class="page-item">
+                           <a href="detailab60.html?rs_idx=6&amp;page=1&amp;revPage=7" class="page-link">7</a>
+                        </li>
+                     
+                  
+                  
+                  
+                     
+                        <li class="page-item active">
+                           <a href="detail9e55.html?rs_idx=6&amp;page=1&amp;revPage=8" class="page-link">8</a>
+                        </li>
+                     
+                     
+                  
+                  
+                  
+                     
+                     
+                        <li class="page-item">
+                           <a href="detailef9c.html?rs_idx=6&amp;page=1&amp;revPage=9" class="page-link">9</a>
+                        </li>
+                     
+                  
+                  
+                  
+                     
+                     
+                        <li class="page-item">
+                           <a href="detail8138.html?rs_idx=6&amp;page=1&amp;revPage=10" class="page-link">10</a>
+                        </li>
+                     
+                  
+                  
+                  
+                     
+                     
+                        <li class="page-item">
+                           <a href="detailb556.html?rs_idx=6&amp;page=1&amp;revPage=11" class="page-link">다음</a>
+                        </li>
+                     
+                  
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+<script>
+   function imgPop(i){
+      window.open("/review/pop?img="+i);
+   }
+</script>
+<!-- Footer-->
+
+
+
+
+    <head>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="resources/assets/favicon.html" />
+        
+        <!-- CSS (includes Bootstrap) -->
+        <link href="../resources/css/styles.css" rel="stylesheet" />
+
+	</head>
+
+	<footer class="py-5 bg-dark">
+		<div class="container px-4 px-lg-5">
+			<p class="m-0 text-center text-white">Copyright &copy; JejuMatjip
+				Website 2023</p>
+			<h5 style="color: #adb5bd; text-align: center; margin-top: 1rem;">
+			Project made by.　Haeng。Hyeock。Jun。Sub。Jong。Young。</h5>
+			<p class="float-end"><a href="#">Back to top</a></p>
+			<!-- <p><a href="#">Privacy</a> · <a href="#">Terms</a></p>  -->
+		</div>
+	</footer>
+   
+<!-- Bootstrap core JS-->
+<script src="../../cdn.jsdelivr.net/npm/bootstrap%405.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="resources/js/scripts.html"></script>
+
+</body>
+
+<!-- Mirrored from localhost:8081/restaurant/detail?rs_idx=6&page=1&revPage=8 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 23 Aug 2023 07:14:18 GMT -->
+</html>
